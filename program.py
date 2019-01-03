@@ -1,1 +1,4 @@
-print('initial commit')
+print('---------------------------------------------')
+print('           birthday countdown.               ')
+print('---------------------------------------------')
+print()
