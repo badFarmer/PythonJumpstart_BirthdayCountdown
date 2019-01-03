@@ -30,6 +30,8 @@ def print_birthday_information(days):
         elif days == 1:
             ub = 'unbirthday'
         print('Your birthday is {} {} away.'.format(days,ub))
+    elif days <0:
+        print ('You have already had your birthday, you sneaky fucking chump.')
     else:
         print('Happy birthday!')
 
