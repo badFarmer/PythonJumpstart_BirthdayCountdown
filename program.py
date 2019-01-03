@@ -25,15 +25,16 @@ def compute_days_between_dates(original_date, target_date):
 
 def print_birthday_information(days):
     if days != 0:
-        if days >1:
+        if days > 1:
             ub = 'unbirtdays'
         elif days == 1:
             ub = 'unbirthday'
-        print('Your birthday is {} {} away.'.format(days,ub))
-    elif days <0:
-        print ('You have already had your birthday, you sneaky fucking chump.')
+        print('Your birthday is {} {} away.'.format(days, ub))
+    elif days < 0:
+        print('You have already had your birthday, you sneaky fucking chump.')
     else:
         print('Happy birthday!')
+
 
 def main():
     print_header()
