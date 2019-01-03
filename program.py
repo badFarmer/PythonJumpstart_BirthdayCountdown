@@ -18,7 +18,7 @@ def get_birthday_from_user():
 
 
 def compute_days_between_dates(original_date, target_date):
-    this_year = datetime.date(original_date.year,target_date.month,target_date.day)
+    this_year = datetime.date(target_date.year,original_date.month,original_date.day)
     dt = this_year - target_date
     return dt.days
 
@@ -29,7 +29,7 @@ def print_birthday_information(days):
             ub = 'unbirtdays'
         elif days == 1:
             ub = 'unbirthday'
-        print('Your birthday is {} unbirthdays away.'.format(days))
+        print('Your birthday is {} {} away.'.format(days,ub))
     else:
         print('Happy birthday!')
 
